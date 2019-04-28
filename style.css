@@ -8,8 +8,13 @@ rect {
   stroke-width: 1px;
 }
 
-/* Hovered future cells, and any previous  */
-rect.future:hover, rect.future:hover ~ rect.future {
+/*
+  Using the intermediary color for cells located between
+  the cursor and the current time
+*/
+rect.past:hover,
+rect.future:hover,
+rect.future:hover ~ rect.future {
   fill: #fdaa83;
 }
 
