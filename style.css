@@ -1,0 +1,18 @@
+svg {
+  background: lightgrey;
+}
+
+rect {
+  fill: grey;
+  stroke: lightgrey;
+  stroke-width: 1px;
+}
+
+/* Hovered future cells, and any previous  */
+rect.future:hover, rect.future:hover ~ rect.future {
+  fill: #fdaa83;
+}
+
+rect.past {
+  fill: #fc3e1d;
+}
